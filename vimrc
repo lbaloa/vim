@@ -35,8 +35,9 @@
 " - Set mouse
       set mouse=a
 
-" - Set tab for 4 spaces
-      set shiftwidth=2
+" - Set tab for 2 spaces
+      set shiftwidth=5
+      set tabstop=5
 
 " - Set colorschemes depending on type
 
