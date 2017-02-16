@@ -48,4 +48,4 @@
 "  Mapping match "end characters" to \ws and stop match to \wf
 
     :nnoremap <Leader>wn :match ExtraWhiteSpace /^\s* \s*\<Bar>\s\+$/<CR>
-    :nnoremap <Leader>wf :matchCR>
+    :nnoremap <Leader>wf :match <CR>
