@@ -36,10 +36,16 @@
       set mouse=a
 
 " - Set tab for 2 spaces
-      set shiftwidth=5
-      set tabstop=5
+      set shiftwidth=2
+      set tabstop=2
+      set expandtab
 
 " - Set colorschemes depending on type
 
 "   vim files
     autocmd WinEnter,FileType vim colorscheme lucario
+
+"  Mapping match "end characters" to \ws and stop match to \wf
+
+    :nnoremap <Leader>wn :match ExtraWhiteSpace /^\s* \s*\<Bar>\s\+$/<CR>
+    :nnoremap <Leader>wf :matchCR>
