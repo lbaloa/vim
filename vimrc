@@ -4,6 +4,9 @@
 "  Leonardo Baloa, Ph.D.
 "
 
+" - Set clipboard to be unnamedplus.  This is to get "+y to work.
+      set clipboard=unnamedplus
+
 " - Default is nocompatible, however we are setting it to make sure.
       set nocompatible
 
