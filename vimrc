@@ -5,7 +5,11 @@
 "
 
 " - Set clipboard to be unnamedplus.  This is to get "+y to work.
-      set clipboard=unnamedplus
+      if system('uname -s') == "Darwin\n"
+        set clipboard=unnamed
+      else
+        set clipboard=unnamedplus
+      endif
 
 " - Default is nocompatible, however we are setting it to make sure.
       set nocompatible
