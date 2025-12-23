@@ -4,8 +4,11 @@
 "  Leonardo Baloa, Ph.D., MBA
 "
 
-" - Check filetype On and have indent and plugins On too
+" -   Equivalent of :filetype-indent-on 
       filetype indent plugin on
+
+" -  Set numbering 
+     set number
 
 " - Enable syntax highlighting
       syntax on
