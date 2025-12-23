@@ -1,18 +1,8 @@
 " .vimrc
 "   Init file for vim.
 "
-"  Leonardo Baloa, Ph.D.
+"  Leonardo Baloa, Ph.D., MBA
 "
-
-" - Set clipboard to be unnamedplus.  This is to get "+y to work.
-      if system('uname -s') == "Darwin\n"
-        set clipboard=unnamed
-      else
-        set clipboard=unnamedplus
-      endif
-
-" - Default is nocompatible, however we are setting it to make sure.
-      set nocompatible
 
 " - Check filetype On and have indent and plugins On too
       filetype indent plugin on
@@ -46,13 +36,3 @@
       set shiftwidth=2
       set tabstop=2
       set expandtab
-
-" - Set colorschemes depending on type
-
-"   vim files
-    autocmd WinEnter,FileType vim colorscheme lucario
-
-"  Mapping match "end characters" to \ws and stop match to \wf
-
-    :nnoremap <Leader>wn :match ExtraWhiteSpace /^\s* \s*\<Bar>\s\+$/<CR>
-    :nnoremap <Leader>wf :match <CR>
